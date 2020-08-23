@@ -29,6 +29,7 @@ function changeRating (rating, id) {
 }
 
 module.exports = {
+  Books: Books,
   getAllBooks: getAllBooks,
   queryById: queryById,
   ascendingRatingSort: ascendingRatingSort,
