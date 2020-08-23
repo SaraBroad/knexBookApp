@@ -1,6 +1,5 @@
 // this contains knex queries that can be made without Express
-
-require('dotenv').config();
+require('dotenv').config()
 const knex = require('./db/knex.js')
 
 function selectAll () {
@@ -33,3 +32,9 @@ function ascendingRatingSort () {
 }
 
 // ascendingRatingSort()
+
+module.exports = {
+  selectAll,
+  queryById,
+  ascendingRatingSort
+}
